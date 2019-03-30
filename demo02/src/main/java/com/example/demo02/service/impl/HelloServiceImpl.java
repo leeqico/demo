@@ -40,4 +40,9 @@ public class HelloServiceImpl implements HelloService {
     public Hello selectById(Integer id) {
         return helloMapper.selectByPrimaryKey(id);
     }
+
+    @Override
+    public Hello selectByName(String name) {
+        return helloMapper.selectByName(name);
+    }
 }

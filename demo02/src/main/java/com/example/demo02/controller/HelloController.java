@@ -42,4 +42,9 @@ public class HelloController {
         return helloService.selectById(id);
     }
 
+    @GetMapping("/selectByName")
+    public Hello selectByName(String name){
+        return helloService.selectByName(name);
+    }
+
 }

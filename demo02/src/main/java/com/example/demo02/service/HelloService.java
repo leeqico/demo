@@ -15,4 +15,6 @@ public interface HelloService {
     List<Hello> selectAll();
 
     Hello selectById(Integer id);
+
+    Hello selectByName(String name);
 }
